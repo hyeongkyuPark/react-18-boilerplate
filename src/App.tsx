@@ -1,21 +1,37 @@
-import { AtomTest } from '@atoms';
-import { MoleculeTest } from '@molecules';
-import { OrganismTest } from '@organisms';
-import { TemplateTest } from '@templates';
-import { cn } from 'lib/utils';
+import DefaultLayout from 'components/templates/DefaultLayout';
+import { HomePage } from 'pages';
 import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { PAGE_URL } from 'utils/urls';
+
+const router = createBrowserRouter([
+  {
+    path: PAGE_URL.HOME,
+    children: [
+      {
+        path: PAGE_URL.HOME,
+        element: <HomePage />,
+      },
+      {
+        path: PAGE_URL.TEST,
+        element: <HomePage />,
+      },
+    ],
+  },
+  {
+    path: PAGE_URL.HOME,
+    element: <DefaultLayout />,
+    children: [
+      {
+        path: PAGE_URL.TEST2,
+        element: <HomePage />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <div className={cn('App flex flex-col gap-2')}>
-      test
-      <AtomTest />
-      <MoleculeTest />
-      <OrganismTest />
-      <TemplateTest />
-      <button type="button">test</button>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
