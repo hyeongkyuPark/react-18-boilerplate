@@ -8,6 +8,7 @@ module.exports = {
     'airbnb',
     'plugin:react/recommended',
     'plugin:prettier/recommended',
+    'plugin:storybook/recommended',
   ],
   overrides: [
     {
@@ -27,6 +28,8 @@ module.exports = {
   },
   plugins: ['react', 'react-hooks', 'prettier'],
   rules: {
+    'react/jsx-props-no-spreading': 0,
+    'import/prefer-default-export': 0,
     'react-hooks/exhaustive-deps': 'error',
     'import/extensions': [
       2,

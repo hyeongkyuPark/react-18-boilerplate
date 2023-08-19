@@ -138,7 +138,6 @@ const customTwMerge = extendTailwindMerge({
   },
 });
 
-// eslint-disable-next-line import/prefer-default-export
 export function cn(...inputs: ClassValue[]) {
   return customTwMerge(clsx(inputs));
 }
