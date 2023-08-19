@@ -1,2 +1,2 @@
-export { default as Test } from './Test';
-export { default as Test2 } from './Test';
+export { default as AtomTest } from './AtomTest';
+export { default as AtomTest2 } from './AtomTest';

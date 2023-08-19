@@ -23,7 +23,9 @@
   "include": [
     "src",
     ".eslintrc.js",
-    "craco.config.js"
+    "craco.config.js",
+    "postcss.config.js",
+    "tailwind.config.js"
   ],
   "extends": "./tsconfig.paths.json"
 }
