@@ -1,2 +1,1 @@
-export { default as AtomTest } from './AtomTest';
-export { default as AtomTest2 } from './AtomTest';
+export { default as Button } from './Button';

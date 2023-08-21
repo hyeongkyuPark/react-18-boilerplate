@@ -1,6 +1,5 @@
+import { Button } from '@atoms';
 import type { Meta, StoryObj } from '@storybook/react';
-
-import { Button } from './Button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
@@ -13,9 +12,6 @@ const meta = {
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -24,27 +20,49 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary: Story = {
   args: {
-    primary: true,
-    label: 'Button',
+    buttonColor: 'primary',
+    children: 'primary',
   },
 };
 
-export const Secondary: Story = {
+export const PrimaryGhost: Story = {
   args: {
-    label: 'Button',
+    buttonColor: 'primaryGhost',
+    children: 'primaryGhost',
   },
 };
 
-export const Large: Story = {
+export const LightPrimary: Story = {
   args: {
-    size: 'large',
-    label: 'Button',
+    buttonColor: 'lightPrimary',
+    children: 'lightPrimary',
   },
 };
 
-export const Small: Story = {
+export const Gray: Story = {
   args: {
-    size: 'small',
-    label: 'Button',
+    buttonColor: 'gray',
+    children: 'gray',
+  },
+};
+
+export const GrayGhost: Story = {
+  args: {
+    buttonColor: 'grayGhost',
+    children: 'grayGhost',
+  },
+};
+
+export const Plane: Story = {
+  args: {
+    buttonColor: 'plane',
+    children: 'plane',
+  },
+};
+
+export const PlaneGhost: Story = {
+  args: {
+    buttonColor: 'planeGhost',
+    children: 'planeGhost',
   },
 };

@@ -1,3 +1,7 @@
+const FONT_WEIGHT_REGULAR = '400';
+const FONT_WEIGHT_MEDIUM = '500';
+const FONT_WEIGHT_BOLD = '700';
+
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
@@ -6,8 +10,11 @@ module.exports = {
       seoul: ['var(--font-seoulHangangFont)'],
     },
     screens: {
+      // pc
       lg: { max: '1249px' },
+      // tablet
       md: { max: '1024px' },
+      // mobile
       sm: { max: '768px' },
     },
     fontSize: {
@@ -15,364 +22,364 @@ module.exports = {
         '56px',
         {
           lineHeight: '78px ',
-          fontWeight: '500',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       d1m: [
         '56px',
         {
           lineHeight: '78px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_MEDIUM,
         },
       ],
       d1b: [
         '56px',
         {
           lineHeight: '78px ',
-          fontWeight: '600',
+          fontWeight: FONT_WEIGHT_BOLD,
         },
       ],
       d2: [
         '40px',
         {
           lineHeight: '56px ',
-          fontWeight: '500',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       d2m: [
         '40px',
         {
           lineHeight: '56px ',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_MEDIUM,
         },
       ],
       d2b: [
         '40px',
         {
           lineHeight: '56px ',
-          fontWeight: '600',
+          fontWeight: FONT_WEIGHT_BOLD,
         },
       ],
       d3: [
         '32px',
         {
           lineHeight: '48px ',
-          fontWeight: '500',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       d3m: [
         '32px',
         {
           lineHeight: '48px ',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_MEDIUM,
         },
       ],
       d3b: [
         '32px',
         {
           lineHeight: '48px ',
-          fontWeight: '600',
+          fontWeight: FONT_WEIGHT_BOLD,
         },
       ],
       h1: [
         '28px',
         {
           lineHeight: '40px ',
-          fontWeight: '500',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       h1m: [
         '28px',
         {
           lineHeight: '40px ',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_MEDIUM,
         },
       ],
       h1b: [
         '28px',
         {
           lineHeight: '40px ',
-          fontWeight: '600',
+          fontWeight: FONT_WEIGHT_BOLD,
         },
       ],
       h2: [
         '24px',
         {
           lineHeight: '34px ',
-          fontWeight: '500',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       h2m: [
         '24px',
         {
           lineHeight: '34px ',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_MEDIUM,
         },
       ],
       h2b: [
         '24px',
         {
           lineHeight: '34px ',
-          fontWeight: '600',
+          fontWeight: FONT_WEIGHT_BOLD,
         },
       ],
       h3: [
         '20px',
         {
           lineHeight: '28px ',
-          fontWeight: '500',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       h3m: [
         '20px',
         {
           lineHeight: '28px ',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_MEDIUM,
         },
       ],
       h3b: [
         '20px',
         {
           lineHeight: '28px ',
-          fontWeight: '600',
+          fontWeight: FONT_WEIGHT_BOLD,
         },
       ],
       h4: [
         '16px',
         {
           lineHeight: '26px ',
-          fontWeight: '500',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       h4m: [
         '16px',
         {
           lineHeight: '26px ',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_MEDIUM,
         },
       ],
       h4b: [
         '16px',
         {
           lineHeight: '26px ',
-          fontWeight: '600',
+          fontWeight: FONT_WEIGHT_BOLD,
         },
       ],
       b1: [
         '24px',
         {
           lineHeight: '38px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       b1m: [
         '24px',
         {
           lineHeight: '38px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_MEDIUM,
         },
       ],
       b1b: [
         '24px',
         {
           lineHeight: '38px',
-          fontWeight: '600',
+          fontWeight: FONT_WEIGHT_BOLD,
         },
       ],
       b2: [
         '20px',
         {
           lineHeight: '32px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       b2m: [
         '20px',
         {
           lineHeight: '32px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_MEDIUM,
         },
       ],
       b2b: [
         '20px',
         {
           lineHeight: '32px',
-          fontWeight: '600',
+          fontWeight: FONT_WEIGHT_BOLD,
         },
       ],
       b3: [
         '18px',
         {
           lineHeight: '28px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       b3m: [
         '18px',
         {
           lineHeight: '28px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_MEDIUM,
         },
       ],
       b3b: [
         '18px',
         {
           lineHeight: '28px',
-          fontWeight: '600',
+          fontWeight: FONT_WEIGHT_BOLD,
         },
       ],
       b4: [
         '16px',
         {
           lineHeight: '26px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       b4m: [
         '16px',
         {
           lineHeight: '26px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_MEDIUM,
         },
       ],
       b4b: [
         '16px',
         {
           lineHeight: '26px',
-          fontWeight: '600',
+          fontWeight: FONT_WEIGHT_BOLD,
         },
       ],
       b5: [
         '14px',
         {
           lineHeight: '22px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       b5m: [
         '14px',
         {
           lineHeight: '22px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_MEDIUM,
         },
       ],
       b5b: [
         '14px',
         {
           lineHeight: '22px',
-          fontWeight: '600',
+          fontWeight: FONT_WEIGHT_BOLD,
         },
       ],
       b6: [
         '12px',
         {
           lineHeight: '20px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       b6m: [
         '12px',
         {
           lineHeight: '20px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_MEDIUM,
         },
       ],
       b6b: [
         '12px',
         {
           lineHeight: '20px',
-          fontWeight: '600',
+          fontWeight: FONT_WEIGHT_BOLD,
         },
       ],
       b7: [
         '10px',
         {
           lineHeight: '16px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       b7m: [
         '10px',
         {
           lineHeight: '16px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_MEDIUM,
         },
       ],
       b7b: [
         '10px',
         {
           lineHeight: '16px',
-          fontWeight: '600',
+          fontWeight: FONT_WEIGHT_BOLD,
         },
       ],
       button1: [
         '17px',
         {
           lineHeight: '20px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       button2: [
         '15px',
         {
           lineHeight: '18px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       button3: [
         '13px',
         {
           lineHeight: '16px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       button4: [
         '12px',
         {
           lineHeight: '14px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       label1: [
         '15px',
         {
           lineHeight: '16px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       label2: [
         '13px',
         {
           lineHeight: '14px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       label3: [
         '11px',
         {
           lineHeight: '12px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       Paragraph1: [
         '17px',
         {
           lineHeight: '28px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       Paragraph2: [
         '15px',
         {
           lineHeight: '24px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
       Paragraph3: [
         '14px',
         {
           lineHeight: '24px',
-          fontWeight: '300',
+          fontWeight: FONT_WEIGHT_REGULAR,
         },
       ],
     },
@@ -384,16 +391,16 @@ module.exports = {
     },
     colors: {
       transparent: 'transparent',
-      primary1: '#0B1733',
-      primary2: '#0F1F44',
-      primary3: '#0F2453',
-      primary4: '#19346F',
-      primary5: '#31519C',
-      primary6: '#4D70BF',
-      primary7: '#6989D2',
-      primary8: '#97B2F0',
-      primary9: '#D6E1FB',
-      primary10: '#E5EDFF',
+      primary1: '#002F24',
+      primary2: '#0A392E',
+      primary3: '#18584C',
+      primary4: '#206B5E',
+      primary5: '#2D8777',
+      primary6: '#42A78F',
+      primary7: '#7BCEBB',
+      primary8: '#A3E5D5',
+      primary9: '#D1F4EC',
+      primary10: '#E7FDF8',
       secondary1: '#CE0D52',
       secondary2: '#EA2069',
       secondary3: '#FF2F7A',
@@ -409,17 +416,17 @@ module.exports = {
       secondarySub4: '#FFFCF7',
       secondarySub5: '#DF818F',
       gray1: '#000000',
-      gray2: '#222529',
-      gray3: '#353A3F',
-      gray4: '#4A5056',
-      gray5: '#5E656E',
-      gray6: '#6E757C',
-      gray7: '#8C939A',
-      gray8: '#ACB3BA',
-      gray9: '#CFD4D9',
-      gray10: '#DEE2E6',
-      gray11: '#F1F3F6',
-      gray12: '#F6F8FB',
+      gray2: '#1F1F1F',
+      gray3: '#383838',
+      gray4: '#555555',
+      gray5: '#616161',
+      gray6: '#737373',
+      gray7: '#949494',
+      gray8: '#BEBEBE',
+      gray9: '#CECECE',
+      gray10: '#E8E8E8',
+      gray11: '#F4F4F4',
+      gray12: '#F9F9F9',
       gray13: '#FFFFFF',
       red1: '#85101E',
       red2: '#B73342',

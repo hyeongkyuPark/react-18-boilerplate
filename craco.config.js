@@ -7,6 +7,12 @@ module.exports = {
       plugin: {
         overrideWebpackConfig: ({ webpackConfig }) => {
           webpackConfig.resolve.plugins.push(new TsconfigPathsPlugin({}));
+
+          webpackConfig.module.rules.push({
+            test: /\.svg$/,
+            use: ['@svgr/webpack'],
+          });
+
           return webpackConfig;
         },
       },
