@@ -1,11 +1,10 @@
-import { cva, type VariantProps } from 'class-variance-authority';
+import { cva } from 'class-variance-authority';
 import { cn } from 'lib/utils';
-import type React from 'react';
 
-const defaultButtonClassName =
+export const defaultButtonClassName =
   'w-fit rounded-md flex items-center justify-center gap-[4px]';
 
-const buttonColorSet = {
+export const buttonColorSet = {
   primary: cn(
     // defaul
     'text-gray13 bg-primary3 border border-primary3',
@@ -120,18 +119,3 @@ export const buttonVariant = cva(defaultButtonClassName, {
     size: 40,
   },
 });
-
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariant> {
-  PrefixIcon?: React.FunctionComponent<
-    React.SVGProps<SVGSVGElement> & {
-      title?: string | undefined;
-    }
-  >;
-  SuffixIcon?: React.FunctionComponent<
-    React.SVGProps<SVGSVGElement> & {
-      title?: string | undefined;
-    }
-  >;
-}

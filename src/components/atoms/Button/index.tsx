@@ -1,6 +1,7 @@
 import { cn } from 'lib/utils';
 import React from 'react';
-import { buttonVariant, type ButtonProps } from './teyps';
+import { type ButtonProps } from './types';
+import { buttonVariant } from './variants';
 
 export default function Button(props: ButtonProps) {
   const {
