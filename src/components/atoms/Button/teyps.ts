@@ -2,7 +2,8 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from 'lib/utils';
 import type React from 'react';
 
-const defaultButtonClassName = 'w-fit rounded-md flex items-center gap-[4px]';
+const defaultButtonClassName =
+  'w-fit rounded-md flex items-center justify-center gap-[4px]';
 
 const buttonColorSet = {
   primary: cn(

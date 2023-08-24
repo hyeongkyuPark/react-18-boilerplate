@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from './Button';
+import { Button } from '@atoms';
 import './header.css';
 
 interface User {
@@ -53,18 +53,19 @@ export function Header({
               <span className="welcome">
                 Welcome, <b>{user.name}</b>!
               </span>
-              <Button size="small" onClick={onLogout} label="Log out" />
+              <Button size={48} onClick={onLogout}>
+                Log out
+              </Button>
             </>
           ) : (
-            <>
-              <Button size="small" onClick={onLogin} label="Log in" />
-              <Button
-                primary
-                size="small"
-                onClick={onCreateAccount}
-                label="Sign up"
-              />
-            </>
+            <div className="flex gap-[4px]">
+              <Button size={48} onClick={onLogin}>
+                Log in
+              </Button>
+              <Button size={40} onClick={onCreateAccount}>
+                Sign up
+              </Button>
+            </div>
           )}
         </div>
       </div>

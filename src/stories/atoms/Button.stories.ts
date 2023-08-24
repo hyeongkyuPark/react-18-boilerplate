@@ -3,9 +3,22 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: 'Example/Button',
+  title: 'Atoms/Button',
   component: Button,
   parameters: {
+    backgrounds: {
+      default: 'light',
+      values: [
+        {
+          name: 'light',
+          value: '#FFFFFF',
+        },
+        {
+          name: 'dark',
+          value: '#808080',
+        },
+      ],
+    },
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'centered',
   },
@@ -61,8 +74,30 @@ export const Plane: Story = {
 };
 
 export const PlaneGhost: Story = {
+  parameters: {
+    backgrounds: { default: 'dark' },
+  },
   args: {
     buttonColor: 'planeGhost',
     children: 'planeGhost',
+  },
+};
+
+export const Rounded: Story = {
+  args: {
+    buttonColor: 'primary',
+    children: 'rounded primary',
+    isRound: true,
+  },
+};
+
+export const Full: Story = {
+  parameters: {
+    layout: 'padded',
+  },
+  args: {
+    buttonColor: 'primary',
+    children: 'full primary',
+    isFull: true,
   },
 };
