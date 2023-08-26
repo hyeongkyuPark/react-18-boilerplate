@@ -9,7 +9,7 @@ export const defaultClearButtonClassName = cn(
 );
 export const defaultInputClassName = cn(
   // default
-  'group flex items-center gap-[10px] pl-[16px] py-[12px] rounded-md border border-gray9 text-b4',
+  'group flex items-center gap-[10px] pl-[16px] py-[12px] rounded-md border border-gray9 text-b4 w-full',
   // 내부 input 스타일 제거
   '[&>input]:border-none [&>input]:outline-none [&>input]:flex-1 [&>input]:placeholder-gray7',
   // value !== ''

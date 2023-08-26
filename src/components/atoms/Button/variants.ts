@@ -15,7 +15,7 @@ export const buttonColorSet = {
     // press
     'active:bg-primary1 active:border-primary1',
     // disabled
-    'disabled:text-gray8 disabled:bg-gray12',
+    'disabled:text-gray8 disabled:bg-gray12 disabled:border-gray12 disabled:cursor-not-allowed',
   ),
   primaryGhost: cn(
     // defaul
@@ -39,7 +39,7 @@ export const buttonColorSet = {
     // press
     'active:text-primary1 active:bg-primary7 active:border-primary7',
     // disabled
-    'disabled:text-gray8 disabled:bg-gray12',
+    'disabled:text-gray8 disabled:bg-gray12 disabled:border-gray12 disabled:cursor-not-allowed',
   ),
   gray: cn(
     // defaul
@@ -51,7 +51,7 @@ export const buttonColorSet = {
     // press
     'active:bg-gray9 active:border-gray9',
     // disabled
-    'disabled:text-gray8 disabled:bg-gray12',
+    'disabled:text-gray8 disabled:bg-gray12 disabled:border-gray12 disabled:cursor-not-allowed',
   ),
   grayGhost: cn(
     // defaul
@@ -63,7 +63,7 @@ export const buttonColorSet = {
     // press
     'active:border-gray5',
     // disabled
-    'disabled:text-gray8 disabled:border-gray10',
+    'disabled:text-gray8 disabled:border-gray10 disabled:cursor-not-allowed',
   ),
   plane: cn(
     // defaul
@@ -75,7 +75,7 @@ export const buttonColorSet = {
     // press
     'active:bg-gray9 active:border-gray9',
     // disabled
-    'disabled:text-gray8 disabled:bg-transparent',
+    'disabled:text-gray8 disabled:bg-transparent disabled:border-transparent disabled:cursor-not-allowed',
   ),
   planeGhost: cn(
     // defaul
@@ -87,7 +87,7 @@ export const buttonColorSet = {
     // press
     'active:bg-opacity-10',
     // disabled
-    'disabled:text-gray7 disabled:border-gray5',
+    'disabled:text-gray7 disabled:bg-transparent disabled:border-transparent disabled:cursor-not-allowed',
   ),
 };
 
