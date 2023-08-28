@@ -134,6 +134,7 @@ const customTwMerge = extendTailwindMerge({
       'text-purple4',
       'text-purple5',
       'text-purple6',
+      'text-transparent',
     ],
   },
 });

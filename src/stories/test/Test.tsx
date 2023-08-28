@@ -1,4 +1,4 @@
-import { Button, Input } from '@atoms';
+import { Button, Checkbox, Input } from '@atoms';
 import React from 'react';
 import SectionComponent from './components/Section';
 
@@ -269,7 +269,7 @@ export function ButtonTestComponent() {
 export function InputTestComponent() {
   return (
     <div>
-      <SectionComponent title="Button">
+      <SectionComponent title="Input">
         <div className="flex items-center gap-2 flex-wrap p-[8px]">
           <Input placeholder="Default Input" />
         </div>
@@ -278,6 +278,33 @@ export function InputTestComponent() {
         </div>
         <div className="flex items-center gap-2 flex-wrap p-[8px]">
           <Input value="Disabled" placeholder="Default Input" />
+        </div>
+      </SectionComponent>
+    </div>
+  );
+}
+export function CheckboxTestComponent() {
+  return (
+    <div>
+      <SectionComponent title="Checkbox">
+        <div className="flex items-center gap-2 flex-wrap p-[8px]">
+          <Checkbox />
+          <Checkbox isRound />
+          <Checkbox indicatorType="circle" />
+          <Checkbox indicatorType="circle" isRound />
+          <Checkbox onlyIcon />
+          <Checkbox indicatorType="circle" onlyIcon />
+          <Checkbox disabled />
+          <Checkbox isRound disabled />
+          <Checkbox indicatorType="circle" disabled />
+          <Checkbox indicatorType="circle" isRound disabled />
+          <Checkbox onlyIcon disabled />
+          <Checkbox indicatorType="circle" onlyIcon disabled />
+          <Checkbox isRound disabled checked />
+          <Checkbox indicatorType="circle" disabled checked />
+          <Checkbox indicatorType="circle" isRound disabled checked />
+          <Checkbox onlyIcon disabled checked />
+          <Checkbox indicatorType="circle" onlyIcon disabled checked />
         </div>
       </SectionComponent>
     </div>
