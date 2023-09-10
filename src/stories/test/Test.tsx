@@ -1,5 +1,6 @@
 import { Button, Checkbox, Input } from '@atoms';
-import React from 'react';
+import React, { useState } from 'react';
+import RadioGroup from 'components/atoms/RadioGroup';
 import SectionComponent from './components/Section';
 
 export function ButtonTestComponent() {
@@ -306,6 +307,27 @@ export function CheckboxTestComponent() {
           <Checkbox onlyIcon disabled checked />
           <Checkbox indicatorType="circle" onlyIcon disabled checked />
         </div>
+      </SectionComponent>
+    </div>
+  );
+}
+
+export function RadioGroupTestComponent() {
+  const [value, setValue] = useState('test1');
+
+  return (
+    <div>
+      <SectionComponent title="RadioGroup">
+        <RadioGroup
+          value={value}
+          onValueChange={setValue}
+          options={[
+            { label: 'test1', value: 'test1' },
+            { label: 'test2', value: 'test2' },
+            { label: 'test3', value: 'test3' },
+            { label: 'test4', value: 'test4' },
+          ]}
+        />
       </SectionComponent>
     </div>
   );

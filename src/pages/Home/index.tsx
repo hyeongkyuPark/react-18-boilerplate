@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MoleculeTest } from '@molecules';
 import { TemplateTest } from '@templates';
-import { cn } from 'lib/utils';
+import { cn } from '@styles/lib';
 import { Button, Input } from '@atoms';
 import { IconPlus } from 'assets/svg';
 

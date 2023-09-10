@@ -1,5 +1,5 @@
 import { cva } from 'class-variance-authority';
-import { cn } from 'lib/utils';
+import { cn } from '@styles/lib';
 
 export const defaultButtonClassName =
   'w-fit rounded-md flex items-center justify-center gap-[4px]';

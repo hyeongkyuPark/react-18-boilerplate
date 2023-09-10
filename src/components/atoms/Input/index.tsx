@@ -1,5 +1,5 @@
 import { IconClear } from 'assets/svg';
-import { cn } from 'lib/utils';
+import { cn } from '@styles/lib';
 import React, { useMemo, useRef, useState } from 'react';
 import { type InputProps } from './types';
 import { defaultClearButtonClassName, inputVariant } from './variatns';

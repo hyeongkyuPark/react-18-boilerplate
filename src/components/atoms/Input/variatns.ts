@@ -1,5 +1,5 @@
 import { cva } from 'class-variance-authority';
-import { cn } from 'lib/utils';
+import { cn } from '@styles/lib';
 
 export const defaultClearButtonClassName = cn(
   // default

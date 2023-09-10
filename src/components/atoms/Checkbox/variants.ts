@@ -1,5 +1,5 @@
 import { cva } from 'class-variance-authority';
-import { cn } from 'lib/utils';
+import { cn } from '@styles/lib';
 
 export const defaultCheckboxClassName = cn(
   'group',
@@ -36,17 +36,19 @@ export const checkboxVariant = cva(defaultCheckboxClassName, {
     onlyIcon: false,
   },
 });
+
 export const checkboxIndicatorVariant = cva(defaultCheckboxIndicatorClassName, {
   variants: {
     size: {
       24: 'w-[14px] h-[10px] group-data-[type=circle]:w-[12px] group-data-[type=circle]:h-[12px]',
-      20: 'w-[8px] h-[8px]',
+      20: 'w-[10px] h-[8px]',
     },
   },
   defaultVariants: {
     size: 24,
   },
 });
+
 export const checkboxLabelVariant = cva(defaultCheckboxIndicatorClassName, {
   variants: {
     size: {
