@@ -1,6 +1,8 @@
 import { Button, Checkbox, Input } from '@atoms';
 import React, { useState } from 'react';
 import RadioGroup from 'components/atoms/RadioGroup';
+import Switch from 'components/atoms/Switch';
+import { IconCircle, IconClear, IconPlus } from 'assets/svg';
 import SectionComponent from './components/Section';
 
 export function ButtonTestComponent() {
@@ -328,6 +330,35 @@ export function RadioGroupTestComponent() {
             { label: 'test4', value: 'test4' },
           ]}
         />
+      </SectionComponent>
+    </div>
+  );
+}
+
+export function SwitchTestComponent() {
+  return (
+    <div>
+      <SectionComponent title="Switch">
+        <Switch activeColor="blue3" value />
+        <Switch activeColor="red3" value />
+        <Switch activeColor="green3" value />
+        <Switch activeColor="pink3" value />
+        <Switch activeColor="purple3" value />
+        <Switch activeColor="gray5" value />
+        <Switch activeColor="yellow3" value />
+        <Switch activeColor="teal3" value />
+        <Switch activeColor="orange3" value />
+        <Switch activeColor="sky3" value />
+        <Switch activeColor="secondary3" value />
+        <Switch activeColor="secondarySub3" value />
+
+        <Switch size={24} />
+        <Switch />
+        <Switch size={40} />
+        <Switch CheckIcon={IconPlus} />
+        <Switch CheckIcon={IconCircle} UncheckIcon={IconClear} />
+        <Switch size={24} CheckIcon={IconCircle} UncheckIcon={IconClear} />
+        <Switch size={40} CheckIcon={IconCircle} UncheckIcon={IconClear} />
       </SectionComponent>
     </div>
   );
