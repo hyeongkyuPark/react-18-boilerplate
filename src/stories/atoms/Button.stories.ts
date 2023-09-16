@@ -1,10 +1,23 @@
 import { Button } from '@atoms';
 import type { Meta, StoryObj } from '@storybook/react';
+import * as icons from 'assets/svg';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
   title: 'Atoms/Button',
   component: Button,
+  argTypes: {
+    PrefixIcon: {
+      options: ['none', ...Object.keys(icons)], // An array of serializable values
+      mapping: { none: undefined, ...icons }, // Maps serializable option values to complex arg values
+      control: 'select', // Type 'select' is automatically inferred when 'options' is defined
+    },
+    SuffixIcon: {
+      options: ['none', ...Object.keys(icons)], // An array of serializable values
+      mapping: { none: undefined, ...icons }, // Maps serializable option values to complex arg values
+      control: 'select', // Type 'select' is automatically inferred when 'options' is defined
+    },
+  },
   parameters: {
     backgrounds: {
       default: 'light',
